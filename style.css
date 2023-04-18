@@ -1,9 +1,86 @@
 html {
-  display: flex;
-  height:100vh;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  flex-direction:column;
-  background: #222;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #222;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
+}
+
+#emoji-output {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-wrap: anywhere;
+}
+
+.emoji {
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.emoji-code {
+    color: #777;
+}
+
+#like-button,
+#dislike-button,
+.counter {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#copy-button {
+    float: left;
+}
+
+#copy-button {
+    background-color: #008CBA;
 }
