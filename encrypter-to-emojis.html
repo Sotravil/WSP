@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alphabetical Order Emojis</title>
+  <title>Encrypter To Emojis</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="https://github.com/Sotravil/WSP/blob/main/20230418_111606.jpg">
 </head>
 <body>
   <h1>Emoji Encryption</h1><label for="input-text">Type your text:</label> 
   <textarea id="input-text"></textarea> <button id="translate-button">Translate</button> <label for="output-text">Translated text:</label> 
   <textarea id="output-text" readonly></textarea> <button id="copy-button">Copy</button> 
   <script>
+
+
 
 
       // Define the array of emojis
@@ -64,5 +67,11 @@
       translateButton.addEventListener("click", handleTranslateClick);
       copyButton.addEventListener("click", copyEmojiText);
   </script>
+  <footer>
+    <p>© Sotravil Projects <span id="year"></span></p>
+    <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
